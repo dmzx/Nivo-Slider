@@ -1,0 +1,23 @@
+services:
+    dmzx.nivoslider.controller:
+        class: dmzx\nivoslider\controller\main
+        arguments:
+            - '@auth'
+            - '@controller.helper'
+            - '@dmzx.nivoslider.controller.settings'
+    dmzx.nivoslider.controller.settings:
+        class: dmzx\nivoslider\controller\settings
+        arguments:
+            - '@auth'
+            - '@config'
+            - '@request'
+            - '@user'
+            - '@controller.helper'
+    dmzx.nivoslider.listener:
+        class: dmzx\nivoslider\event\main_listener
+        arguments:
+            - '@config'
+            - '@template'
+            - '@controller.helper'
+        tags:
+            - { name: event.listener }

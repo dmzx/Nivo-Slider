@@ -1,0 +1,14 @@
+<br />
+<!-- IF SLIDER_SL_SW == 1 and S_USER_LOGGED_IN -->
+<!-- IF SCRIPT_NAME == 'index' and not S_ADMIN_AUTH -->
+	<!-- INCLUDE slider.html -->
+<!-- ENDIF -->
+<!-- ELSEIF SLIDER_SL_SW == 2 and S_USER_LOGGED_IN -->
+<!-- IF SCRIPT_NAME == 'index' and not S_ADMIN_AUTH or SCRIPT_NAME == 'viewforum' -->
+	<!-- INCLUDE slider.html -->
+<!-- ENDIF -->
+<!-- ELSEIF SLIDER_SL_SW == 3 and S_USER_LOGGED_IN -->
+<!-- IF SCRIPT_NAME == 'index' and not S_ADMIN_AUTH or SCRIPT_NAME == 'viewforum' or SCRIPT_NAME == 'viewtopic' -->
+	<!-- INCLUDE slider.html -->
+<!-- ENDIF -->
+<!-- ENDIF -->

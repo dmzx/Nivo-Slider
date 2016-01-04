@@ -1,0 +1,39 @@
+{
+	"name": "dmzx/nivoslider",
+	"type": "phpbb-extension",
+	"description": "Adds Nivo Slider to your forum",
+	"homepage": "http://www.dmzx.com/",
+	"version": "1.0.0",
+	"time": "2016-01-02",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"nivoslider"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "dmzx",
+			"homepage": "http://www.dmzx-web.net",
+			"email": "info@dmzx-web.net",
+			"role": "Extension Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "Nivo Slider",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0"
+		},
+		"version-check": {
+			"host": "www.dmzx-web.net",
+			"directory": "/versions",
+			"filename": "nivoslider_version.json"
+		}
+	}
+}

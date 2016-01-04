@@ -1,0 +1,310 @@
+<!-- IF U_ACP -->
+	<!-- INCLUDE overall_header.html -->
+	<h2>{L_SLIDER_TITLE}</h2>
+
+<div class="options-panel">
+
+	<div id="page-tabs" class="panel">
+
+		<!-- SLIDER OPTIONS -->
+
+		<div class="panel" id="slider-options">
+			<div class="inner">
+				<form method="post" action="{SLIDER_SETTINGS}" >
+					<h2>{L_SLIDER_SETTINGS}</h2>
+					<div class="submit-buttons submit-top">
+						<input class="button1" type="submit" id="submit13" name="submit_sl_op" value="{L_SUBMIT}" />&nbsp;
+						<input class="button2" type="reset" id="reset13" name="reset" value="{L_RESET}" />
+						{S_FORM_TOKEN}
+					</div>
+
+					<div>
+						<fieldset>
+						<div class="panel">
+							<dl>
+								<dt><label for="slider_sl_sw">{L_SLIDER_APPEARANCE}</label></dt>
+								<dd>
+									<select name="slider_sl_sw">
+										<option value="0" <!-- IF SLIDER_SL_SW == "0" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_APPEARANCE_NO_SLIDER}</option>
+										<option value="1" <!-- IF SLIDER_SL_SW == "1" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_APPEARANCE_HOME_PAGE}</option>
+										<option value="2" <!-- IF SLIDER_SL_SW == "2" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_APPEARANCE_HOME_TOPIC}</option>
+										<option value="3" <!-- IF SLIDER_SL_SW == "3" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_APPEARANCE_HOME_TOPIC_POST}</option>
+									</select>
+									<div class="slider_info">
+										{L_SLIDER_APPEARANCE_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_mfx">{L_SLIDER_TRANSITION}</label></dt>
+								<dd>
+									<select name="slider_sl_mfx">
+										<option value="0" <!-- IF SLIDER_SL_MFX == "0" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_RANDOM}</option>
+										<option value="1" <!-- IF SLIDER_SL_MFX == "1" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_FADE}</option>
+										<option value="2" <!-- IF SLIDER_SL_MFX == "2" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SLICEDOWN}</option>
+										<option value="3" <!-- IF SLIDER_SL_MFX == "3" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SLICEDOWNLEFT}</option>
+										<option value="4" <!-- IF SLIDER_SL_MFX == "4" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SLICEUP}</option>
+										<option value="5" <!-- IF SLIDER_SL_MFX == "5" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SLICEUPLEFT}</option>
+										<option value="6" <!-- IF SLIDER_SL_MFX == "6" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SLICEUPDOWN}</option>
+										<option value="7" <!-- IF SLIDER_SL_MFX == "7" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SLICEUPDOWNLEFT}</option>
+										<option value="8" <!-- IF SLIDER_SL_MFX == "8" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_FOLD}</option>
+										<option value="9" <!-- IF SLIDER_SL_MFX == "9" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SILDEINRIGHT}</option>
+										<option value="10" <!-- IF SLIDER_SL_MFX == "10" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_SILDEINLEFT}</option>
+										<option value="11" <!-- IF SLIDER_SL_MFX == "11" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_BOXRANDOM}</option>
+										<option value="12" <!-- IF SLIDER_SL_MFX == "12" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_BOXRAIN}</option>
+										<option value="13" <!-- IF SLIDER_SL_MFX == "13" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_BOXRAINREVERSE}</option>
+										<option value="14" <!-- IF SLIDER_SL_MFX == "14" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_BOXRAINGROW}</option>
+										<option value="15" <!-- IF SLIDER_SL_MFX == "15" -->selected="selected"<!-- ENDIF -->>{L_SLIDER_TRANSITION_BOXRAINGROWREVERSE}</option>
+									</select>
+									<div class="slider_info">
+										{L_SLIDER_TRANSITION_EXPLAIN}
+									</div>
+								</dd>
+							<dl>
+							<dl>
+								<dt><label for="slider_sl_slc">{L_SLIDER_SLICES}</label></dt>
+								<dd>
+									<input type="number" class="inputbox autowidth" id="slider_sl_slc" name="slider_sl_slc" size="6" value="{SLIDER_SL_SLC}" />
+									<div class="slider_info">
+										{L_SLIDER_SLICES_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_bxc">{L_SLIDER_BOX_COLS}</label></dt>
+								<dd>
+									<input type="number" class="inputbox autowidth" id="slider_sl_bxc" name="slider_sl_bxc" size="6" value="{SLIDER_SL_BXC}" />
+									<div class="slider_info">
+										{L_SLIDER_BOX_COLS_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_bxr">{L_SLIDER_BOX_ROWS}</label></dt>
+								<dd>
+									<input type="number" class="inputbox autowidth" id="slider_sl_bxr" name="slider_sl_bxr" size="6" value="{SLIDER_SL_BXR}" />
+									<div class="slider_info">
+										{L_SLIDER_BOX_ROWS_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_aspd">{L_SLIDER_ANIMATION_SPEED}</label></dt>
+								<dd>
+									<input type="number" class="inputbox autowidth" id="slider_sl_aspd" name="slider_sl_aspd" size="6" value="{SLIDER_SL_ASPD}" />
+									<div class="slider_info">
+										{L_SLIDER_ANIMATION_SPEED_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_ptm">{L_SLIDER_PAUSE_TIME}</label></dt>
+								<dd>
+									<input type="number" class="inputbox autowidth" id="slider_sl_ptm" name="slider_sl_ptm" size="6" value="{SLIDER_SL_PTM}" />
+									<div class="slider_info">
+										{L_SLIDER_PAUSE_TIME_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_dnv_sw">{L_SLIDER_ANIMATION_PREV_NEXT}</label><a href="#" data-toggle="modal" data-target="#opinfo-sl1" class="modal-trigger"><i class="icon-uniE09F"></i></a></dt>
+
+								<dd><input id="slider_sl_dnv_sw" class="switcher-input" type="checkbox" name="slider_sl_dnv_sw" value="1" data-on-color="btn-theme" data-off-color="default" <!-- IF SLIDER_SL_DNV_SW -->checked="checked"<!-- ENDIF -->>
+									<div class="slider_info">
+										{L_SLIDER_ANIMATION_PREV_NEXT_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_cnv_sw">{L_SLIDER_CONTROL_NAVIGATION}</label><a href="#" data-toggle="modal" data-target="#opinfo-sl2" class="modal-trigger"><i class="icon-uniE09F"></i></a></dt>
+
+								<dd><input id="slider_sl_cnv_sw" class="switcher-input" type="checkbox" name="slider_sl_cnv_sw" value="1" data-on-color="btn-theme" data-off-color="default" <!-- IF SLIDER_SL_CNV_SW -->checked="checked"<!-- ENDIF -->>
+									<div class="slider_info">
+										{L_SLIDER_CONTROL_NAVIGATION_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><label for="slider_sl_poh_sw">{L_SLIDER_PAUSE_ON_HOVER}</label></dt>
+								<dd><input id="slider_sl_poh_sw" class="switcher-input" type="checkbox" name="slider_sl_poh_sw" value="1" data-on-color="btn-theme" data-off-color="default" <!-- IF SLIDER_SL_POH_SW -->checked="checked"<!-- ENDIF -->>
+									<div class="slider_info">
+										{L_SLIDER_PAUSE_ON_HOVER_EXPLAIN}
+									</div>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="panel slides op_rightside">
+							<dl class="panel <!-- IF SLIDER_SL1_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl1_img">{L_SLIDER_SLIDE1}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl1_img" id="slider_sl1_img" size="30" value="{SLIDER_SL1_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl1_url" id="slider_sl1_url" size="30" value="{SLIDER_SL1_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl1_cap" id="slider_sl1_cap" size="30" value="{SLIDER_SL1_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL1_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL1_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL2_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl2_img">{L_SLIDER_SLIDE2}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl2_img" id="slider_sl2_img" size="30" value="{SLIDER_SL2_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl2_url" id="slider_sl2_url" size="30" value="{SLIDER_SL2_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl2_cap" id="slider_sl2_cap" size="30" value="{SLIDER_SL2_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL2_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL2_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL3_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl3_img">{L_SLIDER_SLIDE3}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl3_img" id="slider_sl3_img" size="30" value="{SLIDER_SL3_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl3_url" id="slider_sl3_url" size="30" value="{SLIDER_SL3_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl3_cap" id="slider_sl3_cap" size="30" value="{SLIDER_SL3_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL3_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL3_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL4_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl4_img">{L_SLIDER_SLIDE4}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl4_img" id="slider_sl4_img" size="30" value="{SLIDER_SL4_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl4_url" id="slider_sl4_url" size="30" value="{SLIDER_SL4_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl4_cap" id="slider_sl4_cap" size="30" value="{SLIDER_SL4_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL4_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL4_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL5_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl5_img">{L_SLIDER_SLIDE5}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl5_img" id="slider_sl5_img" size="30" value="{SLIDER_SL5_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl5_url" id="slider_sl5_url" size="30" value="{SLIDER_SL5_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl5_cap" id="slider_sl5_cap" size="30" value="{SLIDER_SL5_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL5_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL5_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL6_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl6_img">{L_SLIDER_SLIDE6}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl6_img" id="slider_sl6_img" size="30" value="{SLIDER_SL6_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl6_url" id="slider_sl6_url" size="30" value="{SLIDER_SL6_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl6_cap" id="slider_sl6_cap" size="30" value="{SLIDER_SL6_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL6_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL6_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL7_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl7_img">{L_SLIDER_SLIDE7}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl7_img" id="slider_sl7_img" size="30" value="{SLIDER_SL7_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl7_url" id="slider_sl7_url" size="30" value="{SLIDER_SL7_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl7_cap" id="slider_sl7_cap" size="30" value="{SLIDER_SL7_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL7_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL7_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+							<dl class="panel <!-- IF SLIDER_SL8_IMG -->alwayson<!-- ENDIF -->">
+								<dt><label for="slider_sl8_img">{L_SLIDER_SLIDE8}</label></dt>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER}" title="{L_SLIDER_TITLE_IMAGE}" type="text" class="inputbox" name="slider_sl8_img" id="slider_sl8_img" size="30" value="{SLIDER_SL8_IMG}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_URL}" title="{L_SLIDER_PLACEHOLDER_URL_TITLE}" type="text" class="inputbox" name="slider_sl8_url" id="slider_sl8_url" size="30" value="{SLIDER_SL8_URL}" />
+								</dd>
+								<dd>
+									<input placeholder="{L_SLIDER_PLACEHOLDER_CAPTION}" title="{L_SLIDER_PLACEHOLDER_CAPTION_TITLE}" type="text" class="inputbox" name="slider_sl8_cap" id="slider_sl8_cap" size="30" value="{SLIDER_SL8_CAP}" />
+								</dd>
+								<!-- IF SLIDER_SL8_IMG -->
+								<div class="slideimg"><img src="{BOARD_URL}ext/dmzx/nivoslider/images/{SLIDER_SL8_IMG}">
+								</div><!-- ENDIF -->
+								<button type="button" class="removeslide button icon-button delete-icon" title="{L_SLIDER_REMOVE_SLIDE}"></button>
+							</dl>
+
+							<button type="button" id="newslide" class="button">{L_SLIDER_ADD_SLIDE}</button>
+						</div>
+						</fieldset>
+					</div>
+					<div class="submit-buttons submit-bottom clearboth">
+						<input class="button1" type="submit" id="submit14" name="submit_sl_op" value="{L_SUBMIT}" />&nbsp;
+						<input class="button2" type="reset" id="reset14" name="reset" value="{L_RESET}" />
+						{S_FORM_TOKEN}
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- SLIDER OPTIONS -->
+
+	</div>
+</div>
+
+<!-- INCLUDE overall_footer.html -->
+<script type="text/javascript" src="{BOARD_URL}ext/dmzx/nivoslider/styles/prosilver/template/slider/js/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="{BOARD_URL}ext/dmzx/nivoslider/styles/prosilver/template/slider/js/spectrum.js"></script>
+<script type="text/javascript" src="{BOARD_URL}ext/dmzx/nivoslider/styles/prosilver/template/slider/js/js_op.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	$('.slides .alwayson').show();
+	$('.removeslide').not('.slides .alwayson .removeslide').hide();
+	var items =	10;
+	var shown =	0;
+	$('#newslide').click(function () {
+		$('.removeslide').show();
+		shown = $('.slides dl:visible').size()+1;
+		if(shown< items) {$('.slides dl:lt('+shown+')').slideDown(500);}
+		else {$('.slides dl:lt('+items+')').show();
+		}
+	});
+	$('.removeslide').click(function () {
+		$(this).closest('dl').addClass('removedslide').slideUp(500);
+		$('.removedslide input').val("");
+			return false;
+	});
+});
+</script>
+<!-- ENDIF -->

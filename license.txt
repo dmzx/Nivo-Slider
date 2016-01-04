@@ -1,0 +1,2 @@
+This extension is designed to work only with "Subway Theme for phpBB 3.1.x " available for purchase on: http://themeforest.net/item/subway-phpbb-31-theme/9820360
+.You can use this extension only if you have purchased our theme and only for personal use. You are not allowed to use this extension for commercial use.

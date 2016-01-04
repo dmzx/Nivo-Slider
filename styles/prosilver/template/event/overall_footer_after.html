@@ -1,0 +1,18 @@
+<!-- IF SLIDER_SL_SW -->
+<script type="text/javascript" src="{BOARD_URL}ext/dmzx/nivoslider/styles/prosilver/template/nivo-slider/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript">
+	$(window).load(function() {
+		$('#nivoslider').nivoSlider({
+			effect: '<!-- IF SLIDER_SL_MFX == "0" -->random<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "1" -->fade<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "2" -->sliceDown<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "3" -->sliceDownLeft<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "4" -->sliceUp<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "5" -->sliceUpLeft<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "6" -->sliceUpDown<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "7" -->sliceUpDownLeft<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "8" -->fold<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "9" -->slideInRight<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "10" -->slideInLeft<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "11" -->boxRandom<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "12" -->boxRain<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "13" -->boxRainReverse<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "14" -->boxRainGrow<!-- ENDIF --><!-- IF SLIDER_SL_MFX == "15" -->boxRainGrowReverse<!-- ENDIF -->',
+			slices: {SLIDER_SL_SLC},
+			boxCols: {SLIDER_SL_BXC},
+			boxRows: {SLIDER_SL_BXR},
+			animSpeed: {SLIDER_SL_ASPD},
+			pauseTime: {SLIDER_SL_PTM},
+			directionNav: <!-- IF SLIDER_SL_DNV_SW -->true<!-- ELSE -->false<!-- ENDIF -->,
+			controlNav: <!-- IF SLIDER_SL_CNV_SW -->true<!-- ELSE -->false<!-- ENDIF -->,
+			pauseOnHover: <!-- IF SLIDER_SL_POH_SW -->true<!-- ELSE -->false<!-- ENDIF -->
+		});
+	});
+</script>
+<!-- ENDIF -->

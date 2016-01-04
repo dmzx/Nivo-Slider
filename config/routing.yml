@@ -1,0 +1,10 @@
+slider_controller:
+    path: /slider-options-panel
+    defaults: { _controller: dmzx.nivoslider.controller:base }
+
+slider_settings:
+    pattern: /slider-options-panel/settings
+    defaults: { _controller: dmzx.nivoslider.controller.settings:manage }
+
+slider_home:
+    pattern: ../
